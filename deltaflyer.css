@@ -23,11 +23,18 @@ a:hover {
 	background-color: transparent;
 	text-decoration: none;
 }
-table,td {
-	font-size: 1em;
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+table td {
+	font-size: 90%;
 	padding: 2px;
 	vertical-align: top;
 	line-height: 1.5em;
+}
+.column1 {
+	width: 120;
 }
 
 /* structure */
@@ -43,8 +50,26 @@ table,td {
 #header {
 	background-color: #000080;
 	color: #FFFFFF;
+	font-size: 1.2em;
 	padding: 10px;
 	margin-bottom: 10px;
+}
+#header h1 {
+	padding: 0.2em 0;
+	font-size: 1.2em;
+}
+#header h2 {
+	font-size: 0.8em;
+}
+#header a {
+	color: #FFFFFF;
+	background-color: transparent;
+	text-decoration: none;
+}
+#header a:hover {
+	color: #FF0000;
+	background-color: transparent;
+	text-decoration: none;
 }
 #footer {
 	background: #FFFFFF;
@@ -70,8 +95,9 @@ table,td {
 }
 #topnavi li {
 	float: left;
-	background: #FFFFFF;
-	border: 1px solid #C0C0C0;
+	background: #DCDCDC;
+	border: solid #C0C0C0;
+	border-width: 0 2px 0 2px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -85,11 +111,14 @@ table,td {
 	text-decoration: none;
 }
 #topnavi li a:hover {
-	background: #000080;
+	background: #FF0000;
 	color: #FFFFFF;
 }
 #topnavi li.now {
-	background: #DCDCDC;
+	background: #000080;
+}
+#topnavi li.now a {
+	color: #FFFFFF;
 }
 
 /* main */
